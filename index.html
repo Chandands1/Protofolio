@@ -17,11 +17,14 @@
   <body>
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       <img
         src="./Personal_protofolio/phots/chandan_photo.png"
         alt="Chandan D S"
       />
-      <nav>
+      <nav id="nav-menu">
         <a href="#about"><i class="fas fa-user"></i> About</a>
         <a href="#skills"><i class="fas fa-code"></i> Skills</a>
         <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
@@ -99,5 +102,11 @@
         <p>&copy; 2025 Chandan D S. All rights reserved.</p>
       </footer>
     </main>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
