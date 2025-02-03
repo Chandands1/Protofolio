@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chandan D S - Blockchain Developer Portfolio">
     <title>Chandan D S - Blockchain Developer</title>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -19,6 +20,9 @@
     <aside class="sidebar">
       <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
+      </div>
+      <div class="close-toggle" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
       </div>
       <img
         src="./Personal_protofolio/phots/chandan_photo.png"
@@ -105,7 +109,8 @@
 
     <script>
       function toggleMenu() {
-        document.getElementById("nav-menu").classList.toggle("active");
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("active");
       }
     </script>
   </body>
